@@ -1,0 +1,51 @@
+{
+  "baseline_cv_metrics": {
+    "mae": 368615.58736439946,
+    "rmse": 1432150.448847231,
+    "r2": -2.5178130139430994
+  },
+  "lgb_cv_metrics": {
+    "mae": 198592.76497746204,
+    "rmse": 406084.5649726695,
+    "r2": 0.735216081053761
+  },
+  "lgb_best_params_per_fold": [
+    {
+      "model__learning_rate": 0.05,
+      "model__max_depth": 8,
+      "model__n_estimators": 200
+    },
+    {
+      "model__learning_rate": 0.05,
+      "model__max_depth": 8,
+      "model__n_estimators": 200
+    },
+    {
+      "model__learning_rate": 0.05,
+      "model__max_depth": 8,
+      "model__n_estimators": 200
+    },
+    {
+      "model__learning_rate": 0.1,
+      "model__max_depth": 6,
+      "model__n_estimators": 100
+    },
+    {
+      "model__learning_rate": 0.05,
+      "model__max_depth": 8,
+      "model__n_estimators": 200
+    }
+  ],
+  "final_best_params": {
+    "model__learning_rate": 0.05,
+    "model__max_depth": 6,
+    "model__n_estimators": 100
+  },
+  "test_metrics": {
+    "mae": 195842.86045066005,
+    "rmse": 362436.688863652,
+    "r2": 0.7677313667349889
+  },
+  "data_sha256": "5bf96071eba966574b45bcfce9918b67527d6445b67337f9566c9191aefce8d2",
+  "run_id": "566d25b5a1344b15b2d6cf14991f1050"
+}

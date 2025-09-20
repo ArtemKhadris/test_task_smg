@@ -1,0 +1,15 @@
+# exp2.yaml
+data_path: "data/processed/processed.csv"
+splits_dir: "data/splits"
+preprocessor_path: "models/preprocessor.joblib"
+out_dir: "models"
+target_col: "buy_price"
+use_log_target: true
+mlflow_experiment: "madrid_housing_experiments"
+run_name: "exp2_log_target"
+inner_cv: 3
+n_jobs: -1
+lgb_param_grid:
+  model__n_estimators: [100, 200]
+  model__learning_rate: [0.05, 0.1]
+  model__max_depth: [6, 8]

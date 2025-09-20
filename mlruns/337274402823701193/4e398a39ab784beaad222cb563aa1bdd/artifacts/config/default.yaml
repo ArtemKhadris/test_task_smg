@@ -1,0 +1,35 @@
+# config/default.yaml
+data:
+  raw_path: "data/raw/madrid_housing.csv"
+  processed_path: "data/processed/processed.csv"
+  target_col: "buy_price"
+
+splits:
+  dir: "data/splits"
+  test_indices: "data/splits/test_indices.json"
+  cv_folds: "data/splits/cv_folds.json"
+
+models:
+  dir: "models"
+  preprocessor_path: "models/preprocessor.joblib"
+  output_dir: "models"
+
+training:
+  use_mlflow: true
+  mlflow_experiment: "madrid_housing_experiments"
+  random_state: 42
+  inner_cv: 3
+  n_jobs: -1
+  lgb_param_grid:
+    model__n_estimators: [100, 200]
+    model__learning_rate: [0.05, 0.1]
+    model__max_depth: [6, 8]
+  use_log_target: false
+
+serve:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+
+logging:
+  level: "INFO"

@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: madrid-housing-app:latest
+    restart: unless-stopped
+    environment:
+      # point MLflow client to local mlflow service in compose network
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - MODEL_NAME=madrid_housing_model
+      # if you prefer to load local joblib model instead of MLflow, unset MLFLOW_TRACKING_URI:
+      # - MLFLOW_TRACKING_URI=
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./reports:/app/reports
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mlflow
+
+  mlflow:
+    image: python:3.10-slim
+    container_name: mlflow_server
+    restart: unless-stopped
+    working_dir: /mlflow
+    volumes:
+      - ./mlruns:/mlflow/artifacts
+      - ./mlflow_db:/mlflow
+    ports:
+      - "5000:5000"
+    command: >
+      bash -lc "python -m pip install --no-cache-dir mlflow &&
+               mlflow server --backend-store-uri sqlite:///mlflow/mlflow.db
+                              --default-artifact-root /mlflow/artifacts
+                              --host 0.0.0.0 --port 5000"

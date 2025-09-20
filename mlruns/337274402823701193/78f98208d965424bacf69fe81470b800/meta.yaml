@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/artem/Desktop/programming/test_task_smg/mlruns/337274402823701193/78f98208d965424bacf69fe81470b800/artifacts
+end_time: 1758204164562
+entry_point_name: ''
+experiment_id: '337274402823701193'
+lifecycle_stage: active
+run_id: 78f98208d965424bacf69fe81470b800
+run_name: exp3_diff_hyper
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758204139301
+status: 3
+tags: []
+user_id: artem

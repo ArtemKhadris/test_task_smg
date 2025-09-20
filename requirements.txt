@@ -1,0 +1,30 @@
+# ML / Data
+pandas
+numpy
+scikit-learn
+lightgbm
+
+# Experiment tracking
+mlflow
+
+# API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Utils
+pyyaml
+click
+
+# Dev tools
+pytest
+black
+flake8
+
+# Analysis
+jupyterlab 
+matplotlib 
+seaborn
+shap
+pytest
+pytest-cov

@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/artem/Desktop/programming/test_task_smg/mlruns/337274402823701193/models/m-dd608220b59d4f5784d2b71b0cf413f4/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.6
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.3.2
+model_id: m-dd608220b59d4f5784d2b71b0cf413f4
+model_size_bytes: 63815
+model_uuid: m-dd608220b59d4f5784d2b71b0cf413f4
+prompts: null
+run_id: d2236b0814d941d0be67b99b51a87f9f
+utc_time_created: '2025-09-18 14:15:06.077698'

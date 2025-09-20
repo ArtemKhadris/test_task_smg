@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/artem/Desktop/programming/test_task_smg/mlruns/337274402823701193/models/m-41da64a87e3244e494662cd8a20e349b/artifacts
+creation_timestamp: 1758059141031
+experiment_id: '337274402823701193'
+last_updated_timestamp: 1758059144896
+model_id: m-41da64a87e3244e494662cd8a20e349b
+model_type: null
+name: model
+source_run_id: 1038c5ce107046298bfa7e65da7f0c78
+status: 2
+status_message: null

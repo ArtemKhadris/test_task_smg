@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/artem/Desktop/programming/test_task_smg/mlruns/337274402823701193/1038c5ce107046298bfa7e65da7f0c78/artifacts
+end_time: 1758059145353
+entry_point_name: ''
+experiment_id: '337274402823701193'
+lifecycle_stage: active
+run_id: 1038c5ce107046298bfa7e65da7f0c78
+run_name: exp1_baseline_no_log
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758059067733
+status: 3
+tags: []
+user_id: artem
