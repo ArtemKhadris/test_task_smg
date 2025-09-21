@@ -16,6 +16,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.pipeline import Pipeline
 from lightgbm import LGBMRegressor
+from src.preprocessing.preprocessing import FeatureEngineer
 
 # Configuration constants
 DATA_PATH = Path("data/processed/processed.csv")
