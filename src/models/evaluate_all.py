@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from src.preprocessing.preprocessing import FeatureEngineer
 
 # Configurable paths
 DATA_PATH = Path("data/processed/processed.csv")
