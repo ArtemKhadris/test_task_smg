@@ -98,7 +98,7 @@ def prepare_data_cmd(config):
     _ = load_config(config)
     # Call data preparation module
     try:
-        run_module("src.data.prepare_data", ["--config", config])
+        run_module("src.preprocessing.preprocessing", ["--config", config])
     except subprocess.CalledProcessError as e:
         print("Error running prepare_data:", e)
         sys.exit(1)
