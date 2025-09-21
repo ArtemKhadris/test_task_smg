@@ -116,16 +116,20 @@ Open http://127.0.0.1:5000 in browser.
 Use the web UI to select the experiment madrid_housing_experiments. You should see the four runs.
 
 Screenshots:
+
 <img width="981" height="142" alt="image" src="https://github.com/user-attachments/assets/53edcae6-5ce2-4b78-92e6-8c43d7e6711f" />
+
 <img width="939" height="143" alt="image" src="https://github.com/user-attachments/assets/52a1f8a9-66e4-497b-b753-e00db277b116" />
+
 <img width="932" height="138" alt="image" src="https://github.com/user-attachments/assets/aefe9680-6165-4e68-84ce-375c5ce69a80" />
+
 <img width="893" height="146" alt="image" src="https://github.com/user-attachments/assets/14f7660c-a946-4d49-9915-d3c80ff5032e" />
 
 ### Step 6: Evaluation
 
 This file ```src/models/evaluate_all.py``` run with the command ```python -m src.models.evaluate_all```
 
-A separate folder is created for each model in the models/ folder in reports/:
+A separate folder is created for each model in the reports/ folder:
 Quality metrics:
 
 ```metrics.json``` - MAE, RMSE, R², log-MAE
@@ -177,7 +181,7 @@ Commands:
 
 Run it with ```uvicorn src.app.main:app --reload```
 
-```main.py```
+```src/app/main.py```
 
 The main API module.
 
